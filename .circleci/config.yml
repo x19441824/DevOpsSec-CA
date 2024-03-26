@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Deploy to EC2
           command: |
-            ssh ec2-user@your_ec2_instance_public_dns 'bash -s' < scripts/deploy.sh
+            ssh ec2-user@ec2-54-216-158-20.eu-west-1.compute.amazonaws.com 'bash -s' < scripts/deploy.sh
 
 workflows:
   version: 2
