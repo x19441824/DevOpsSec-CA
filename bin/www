@@ -1,4 +1,4 @@
-var app = require('/home/ec2-user/DevOpsSec-CA/app.js');
+var app = require('/home/ec2-user/DevOpsSec-CA/test/app.js');
 var debug = require('debug')('phishsense:server');
 var http = require('http');
 
