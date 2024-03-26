@@ -74,8 +74,8 @@ if(process.env.ENV !== "DEV") {
   var privatekey = fs.readFileSync('/home/ec2-user/x19441824_DevOpsSec_CA.pem', "utf8")
   console.log(typeof privatekey)
   var cert = fs.readFileSync('server.crt', "utf8")
-  var header = "-----BEGIN PRIVATE KEY-----"
-  var footer = "-----END PRIVATE KEY-----"
+  var header = "-----BEGIN RSA PRIVATE KEY-----"
+  var footer = "-----END RSA PRIVATE KEY-----"
   console.log(privatekey.split(header))
   privatekey= privatekey.split(header)[1]
   privatekey = privatekey.split(footer)[0]
